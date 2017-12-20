@@ -14,12 +14,42 @@ With MDTrajFPS, you can
 
 The original FPS-software package is available at http://www.mpc.hhu.de/software/fps.html.
 
-####  Citations 
+
+##  Code Example
+
+```python
+import mdtraj as md
+import fluorescence
+
+traj = md.load('./fluorescence/sample/hGBP1_out_3.h5')
+av_traj = fluorescence.fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB')
+
+# save accessible volume as xyz-file
+av_traj[0].save_xyz('test_344.xyz')
+
+# Use certain dye-parameter set (see dye_defenitiion.json file)
+av_traj = fluorescence.fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB', dye_parameter_set='D3Alexa488')
+
+# Calculate
+distance_file = './fluorescence/sample/hGBP1_distance.json'
+av_dist = fluorescence.fps.AvDistanceTrajectory(traj, distance_file)
+av_dist[0]
+```
+
+## Dependencies
+The windows dll requires the following redistributables (not included)
+
+MS-visual studio 2005
+	vcredist_x64
+	vcredist_x86
+
+
+##  Citations 
 * MDTraj - [![DOI for Citing MDTraj](https://img.shields.io/badge/DOI-10.1016%2Fj.bpj.2015.08.015-blue.svg)](http://doi.org/10.1016/j.bpj.2015.08.015)
 * FPS - [![DOI for Citing FPS](https://img.shields.io/badge/DOI-10.1038/nmeth.2222-blue.svg)](http://doi.org/10.1038/nmeth.2222)
 
 
-#### License
+## License
 
 GNU LGPL version 2.1, or at your option a later version of the license.
 Various sub-portions of this library may be independently distributed under
