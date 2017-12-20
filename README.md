@@ -9,6 +9,7 @@ With MDTrajFPS, you can
 - Calculate FRET efficienes using a fast implicit dye model
 - Save calculated positional distributions of dyes for later vizualization
 
+The original FPS-software package is available at http://www.mpc.hhu.de/software/fps.html.
 
 ####  Citations 
 * MDTraj - [![DOI for Citing MDTraj](https://img.shields.io/badge/DOI-10.1016%2Fj.bpj.2015.08.015-blue.svg)](http://doi.org/10.1016/j.bpj.2015.08.015)
