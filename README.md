@@ -1,7 +1,10 @@
 # MDTrajFPS
 MDTrajFPS is tool to calculate FRET observables from MD-trajectories.
 
-mdtraj-fps depends on MDTraj and utilizes the original libraries published together with the "FRET Positioning System" (FPS) in Nature Methods 9, 1218–1225 (2012) "A toolkit and benchmark study for FRET-restrained high-precision structural modeling". 
+MDTrajFPS depends on MDTraj and utilizes the original libraries published together with the "FRET Positioning System" (FPS) in Nature Methods 9, 1218–1225 (2012) "A toolkit and benchmark study for FRET-restrained high-precision structural modeling". 
+
+The implicit model of the label is being improved to support the latest developments 
+[![DOI for Citing COSB](https://img.shields.io/badge/DOI-10.1016/j.sbi.2016.11.012-blue.svg)](https://doi.org/10.1016/j.sbi.2016.11.012). Hence, the library for the calculation of the implicit labels are currently only provided as pre-compiled binaries for (Windows x32, x64, MacOS, and Linux x32, x64). 
 
 With MDTrajFPS, you can
 
