@@ -1,0 +1,36 @@
+{
+    "Distances": {
+        "18-344": {
+            "Forster_radius": 52,
+            "distance": 41.100000000000001,
+            "distance_type": "RDAMean",
+            "error_neg": 4.5,
+            "error_pos": 4.5,
+            "position1_name": "18D",
+            "position2_name": "344A"
+        },
+        "344-496": {
+            "Forster_radius": 52,
+            "distance": 54.799999999999997,
+            "distance_type": "RDAMean",
+            "error_neg": 6.2999999999999998,
+            "error_pos": 5.5,
+            "position1_name": "344A",
+            "position2_name": "496D"
+        }
+    },
+    "Positions": {
+        "18D": {
+            "attachment_atom_selection": "resSeq 18 and name CB",
+            "dye_name": "D1Alexa488"
+        },
+        "344A": {
+            "attachment_atom_selection": "resSeq 344 and name CB",
+            "dye_name": "D1Alexa647"
+        },
+        "496D": {
+            "attachment_atom_selection": "resSeq 496 and name CB",
+            "dye_name": "D1Alexa488"
+        }
+    }
+}
