@@ -532,8 +532,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE___fps
-#define __PYX_HAVE_API___fps
+#define __PYX_HAVE__mdtraj_fps
+#define __PYX_HAVE_API__mdtraj_fps
 #include <string.h>
 #include <stdio.h>
 #include "numpy/arrayobject.h"
@@ -769,7 +769,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "_fps.pyx",
+  "mdtraj_fps/_fps.pyx",
   "__init__.pxd",
   "stringsource",
   "type.pxd",
@@ -2011,12 +2011,12 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, cha
 
 /* Module declarations from 'libc.stdint' */
 
-/* Module declarations from '_fps' */
+/* Module declarations from 'mdtraj_fps' */
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
 static PyTypeObject *__pyx_memoryviewslice_type = 0;
-static MTrandoms __pyx_v_4_fps_rmt;
+static MTrandoms __pyx_v_10mdtraj_fps_rmt;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
 static PyObject *indirect = 0;
@@ -2024,7 +2024,7 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *, PyObject *, double *, uint32_t); /*proto*/
+static CYTHON_INLINE PyObject *__pyx_f_10mdtraj_fps_c_random_distances(PyObject *, PyObject *, double *, uint32_t); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -2061,11 +2061,11 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, 
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t = { "float64_t", NULL, sizeof(__pyx_t_5numpy_float64_t), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_float = { "float", NULL, sizeof(float), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
-#define __Pyx_MODULE_NAME "_fps"
-extern int __pyx_module_is_main__fps;
-int __pyx_module_is_main__fps = 0;
+#define __Pyx_MODULE_NAME "mdtraj_fps"
+extern int __pyx_module_is_main_mdtraj_fps;
+int __pyx_module_is_main_mdtraj_fps = 0;
 
-/* Implementation of '_fps' */
+/* Implementation of 'mdtraj_fps' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_RuntimeError;
@@ -2099,7 +2099,6 @@ static const char __pyx_k_z0[] = "z0";
 static const char __pyx_k_RDA[] = "RDA";
 static const char __pyx_k_av1[] = "av1";
 static const char __pyx_k_av2[] = "av2";
-static const char __pyx_k_fps[] = "_fps";
 static const char __pyx_k_new[] = "__new__";
 static const char __pyx_k_npm[] = "npm";
 static const char __pyx_k_obj[] = "obj";
@@ -2143,7 +2142,6 @@ static const char __pyx_k_RDAMean[] = "RDAMean";
 static const char __pyx_k_density[] = "density";
 static const char __pyx_k_float64[] = "float64";
 static const char __pyx_k_fortran[] = "fortran";
-static const char __pyx_k_fps_pyx[] = "_fps.pyx";
 static const char __pyx_k_memview[] = "memview";
 static const char __pyx_k_Ellipsis[] = "Ellipsis";
 static const char __pyx_k_RDAMeanE[] = "RDAMeanE";
@@ -2159,6 +2157,7 @@ static const char __pyx_k_pyx_state[] = "__pyx_state";
 static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_IndexError[] = "IndexError";
 static const char __pyx_k_ValueError[] = "ValueError";
+static const char __pyx_k_mdtraj_fps[] = "mdtraj_fps";
 static const char __pyx_k_pyx_result[] = "__pyx_result";
 static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
 static const char __pyx_k_ImportError[] = "ImportError";
@@ -2179,6 +2178,7 @@ static const char __pyx_k_random_distances[] = "random_distances";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_strided_and_direct[] = "<strided and direct>";
+static const char __pyx_k_mdtraj_fps__fps_pyx[] = "mdtraj_fps/_fps.pyx";
 static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
 static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";
@@ -2269,8 +2269,6 @@ static PyObject *__pyx_n_s_float64;
 static PyObject *__pyx_n_s_format;
 static PyObject *__pyx_n_s_fortran;
 static PyObject *__pyx_n_u_fortran;
-static PyObject *__pyx_n_s_fps;
-static PyObject *__pyx_kp_s_fps_pyx;
 static PyObject *__pyx_n_s_gd;
 static PyObject *__pyx_n_s_getstate;
 static PyObject *__pyx_kp_s_got_differing_extents_in_dimensi;
@@ -2283,6 +2281,8 @@ static PyObject *__pyx_n_s_ix;
 static PyObject *__pyx_n_s_iy;
 static PyObject *__pyx_n_s_iz;
 static PyObject *__pyx_n_s_main;
+static PyObject *__pyx_n_s_mdtraj_fps;
+static PyObject *__pyx_kp_s_mdtraj_fps__fps_pyx;
 static PyObject *__pyx_n_s_memview;
 static PyObject *__pyx_n_s_mode;
 static PyObject *__pyx_n_s_n;
@@ -2342,10 +2342,10 @@ static PyObject *__pyx_n_s_update;
 static PyObject *__pyx_n_s_x0;
 static PyObject *__pyx_n_s_y0;
 static PyObject *__pyx_n_s_z0;
-static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_self, int32_t __pyx_v_n, int32_t __pyx_v_npm, double __pyx_v_dg, __Pyx_memviewslice __pyx_v_density, __Pyx_memviewslice __pyx_v_r0, int32_t __pyx_v_ng); /* proto */
-static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples); /* proto */
-static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, double __pyx_v_R0, uint32_t __pyx_v_nSamples); /* proto */
-static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples); /* proto */
+static PyObject *__pyx_pf_10mdtraj_fps_density2points(CYTHON_UNUSED PyObject *__pyx_self, int32_t __pyx_v_n, int32_t __pyx_v_npm, double __pyx_v_dg, __Pyx_memviewslice __pyx_v_density, __Pyx_memviewslice __pyx_v_r0, int32_t __pyx_v_ng); /* proto */
+static PyObject *__pyx_pf_10mdtraj_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples); /* proto */
+static PyObject *__pyx_pf_10mdtraj_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, double __pyx_v_R0, uint32_t __pyx_v_nSamples); /* proto */
+static PyObject *__pyx_pf_10mdtraj_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -2443,7 +2443,7 @@ static PyObject *__pyx_codeobj__34;
 static PyObject *__pyx_codeobj__36;
 static PyObject *__pyx_codeobj__43;
 
-/* "_fps.pyx":22
+/* "mdtraj_fps/_fps.pyx":22
  * 
  * @cython.boundscheck(False)
  * def density2points(int32_t n, int32_t npm, double dg, float[:] density, double[:] r0, int32_t ng):             # <<<<<<<<<<<<<<
@@ -2452,9 +2452,9 @@ static PyObject *__pyx_codeobj__43;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4_fps_1density2points(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4_fps_1density2points = {"density2points", (PyCFunction)__pyx_pw_4_fps_1density2points, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4_fps_1density2points(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_10mdtraj_fps_1density2points(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_10mdtraj_fps_1density2points = {"density2points", (PyCFunction)__pyx_pw_10mdtraj_fps_1density2points, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_10mdtraj_fps_1density2points(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int32_t __pyx_v_n;
   int32_t __pyx_v_npm;
   double __pyx_v_dg;
@@ -2546,18 +2546,18 @@ static PyObject *__pyx_pw_4_fps_1density2points(PyObject *__pyx_self, PyObject *
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("density2points", 1, 6, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 22, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_fps.density2points", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.density2points", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4_fps_density2points(__pyx_self, __pyx_v_n, __pyx_v_npm, __pyx_v_dg, __pyx_v_density, __pyx_v_r0, __pyx_v_ng);
+  __pyx_r = __pyx_pf_10mdtraj_fps_density2points(__pyx_self, __pyx_v_n, __pyx_v_npm, __pyx_v_dg, __pyx_v_density, __pyx_v_r0, __pyx_v_ng);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_self, int32_t __pyx_v_n, int32_t __pyx_v_npm, double __pyx_v_dg, __Pyx_memviewslice __pyx_v_density, __Pyx_memviewslice __pyx_v_r0, int32_t __pyx_v_ng) {
+static PyObject *__pyx_pf_10mdtraj_fps_density2points(CYTHON_UNUSED PyObject *__pyx_self, int32_t __pyx_v_n, int32_t __pyx_v_npm, double __pyx_v_dg, __Pyx_memviewslice __pyx_v_density, __Pyx_memviewslice __pyx_v_r0, int32_t __pyx_v_ng) {
   int32_t __pyx_v_ix;
   int32_t __pyx_v_iy;
   int32_t __pyx_v_iz;
@@ -2604,7 +2604,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   __pyx_pybuffernd__r.data = NULL;
   __pyx_pybuffernd__r.rcbuffer = &__pyx_pybuffer__r;
 
-  /* "_fps.pyx":26
+  /* "mdtraj_fps/_fps.pyx":26
  *     cdef double x0, y0, z0
  * 
  *     cdef np.ndarray[dtype=np.float64_t, ndim=2] _r = np.empty((n, 3), dtype=np.float64, order='C')             # <<<<<<<<<<<<<<
@@ -2660,7 +2660,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   __pyx_v__r = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "_fps.pyx":27
+  /* "mdtraj_fps/_fps.pyx":27
  * 
  *     cdef np.ndarray[dtype=np.float64_t, ndim=2] _r = np.empty((n, 3), dtype=np.float64, order='C')
  *     cdef double[:] gd = np.arange(-npm, npm, dtype=np.float64) * dg             # <<<<<<<<<<<<<<
@@ -2711,7 +2711,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "_fps.pyx":29
+  /* "mdtraj_fps/_fps.pyx":29
  *     cdef double[:] gd = np.arange(-npm, npm, dtype=np.float64) * dg
  * 
  *     x0 = r0[0]             # <<<<<<<<<<<<<<
@@ -2722,7 +2722,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   if (__pyx_t_8 < 0) __pyx_t_8 += __pyx_v_r0.shape[0];
   __pyx_v_x0 = (*((double *) ( /* dim=0 */ (__pyx_v_r0.data + __pyx_t_8 * __pyx_v_r0.strides[0]) )));
 
-  /* "_fps.pyx":30
+  /* "mdtraj_fps/_fps.pyx":30
  * 
  *     x0 = r0[0]
  *     y0 = r0[1]             # <<<<<<<<<<<<<<
@@ -2733,7 +2733,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   if (__pyx_t_9 < 0) __pyx_t_9 += __pyx_v_r0.shape[0];
   __pyx_v_y0 = (*((double *) ( /* dim=0 */ (__pyx_v_r0.data + __pyx_t_9 * __pyx_v_r0.strides[0]) )));
 
-  /* "_fps.pyx":31
+  /* "mdtraj_fps/_fps.pyx":31
  *     x0 = r0[0]
  *     y0 = r0[1]
  *     z0 = r0[2]             # <<<<<<<<<<<<<<
@@ -2744,7 +2744,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   if (__pyx_t_10 < 0) __pyx_t_10 += __pyx_v_r0.shape[0];
   __pyx_v_z0 = (*((double *) ( /* dim=0 */ (__pyx_v_r0.data + __pyx_t_10 * __pyx_v_r0.strides[0]) )));
 
-  /* "_fps.pyx":33
+  /* "mdtraj_fps/_fps.pyx":33
  *     z0 = r0[2]
  * 
  *     n = 0             # <<<<<<<<<<<<<<
@@ -2753,7 +2753,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
  */
   __pyx_v_n = 0;
 
-  /* "_fps.pyx":34
+  /* "mdtraj_fps/_fps.pyx":34
  * 
  *     n = 0
  *     for ix in range(-npm, npm):             # <<<<<<<<<<<<<<
@@ -2764,7 +2764,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   for (__pyx_t_12 = (-__pyx_v_npm); __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
     __pyx_v_ix = __pyx_t_12;
 
-    /* "_fps.pyx":35
+    /* "mdtraj_fps/_fps.pyx":35
  *     n = 0
  *     for ix in range(-npm, npm):
  *         offset = ng * (ng * (ix + npm)) + npm             # <<<<<<<<<<<<<<
@@ -2773,7 +2773,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
  */
     __pyx_v_offset = ((__pyx_v_ng * (__pyx_v_ng * (__pyx_v_ix + __pyx_v_npm))) + __pyx_v_npm);
 
-    /* "_fps.pyx":36
+    /* "mdtraj_fps/_fps.pyx":36
  *     for ix in range(-npm, npm):
  *         offset = ng * (ng * (ix + npm)) + npm
  *         for iy in range(-npm, npm):             # <<<<<<<<<<<<<<
@@ -2784,7 +2784,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
     for (__pyx_t_14 = (-__pyx_v_npm); __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
       __pyx_v_iy = __pyx_t_14;
 
-      /* "_fps.pyx":37
+      /* "mdtraj_fps/_fps.pyx":37
  *         offset = ng * (ng * (ix + npm)) + npm
  *         for iy in range(-npm, npm):
  *             for iz in range(-npm, npm):             # <<<<<<<<<<<<<<
@@ -2795,7 +2795,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
       for (__pyx_t_16 = (-__pyx_v_npm); __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
         __pyx_v_iz = __pyx_t_16;
 
-        /* "_fps.pyx":38
+        /* "mdtraj_fps/_fps.pyx":38
  *         for iy in range(-npm, npm):
  *             for iz in range(-npm, npm):
  *                 if density[iz + offset] > 0:             # <<<<<<<<<<<<<<
@@ -2807,7 +2807,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
         __pyx_t_18 = (((*((float *) ( /* dim=0 */ (__pyx_v_density.data + __pyx_t_17 * __pyx_v_density.strides[0]) ))) > 0.0) != 0);
         if (__pyx_t_18) {
 
-          /* "_fps.pyx":39
+          /* "mdtraj_fps/_fps.pyx":39
  *             for iz in range(-npm, npm):
  *                 if density[iz + offset] > 0:
  *                     _r[n, 0] = gd[ix + npm] + x0             # <<<<<<<<<<<<<<
@@ -2822,7 +2822,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
           if (__pyx_t_21 < 0) __pyx_t_21 += __pyx_pybuffernd__r.diminfo[1].shape;
           *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd__r.rcbuffer->pybuffer.buf, __pyx_t_20, __pyx_pybuffernd__r.diminfo[0].strides, __pyx_t_21, __pyx_pybuffernd__r.diminfo[1].strides) = ((*((double *) ( /* dim=0 */ (__pyx_v_gd.data + __pyx_t_19 * __pyx_v_gd.strides[0]) ))) + __pyx_v_x0);
 
-          /* "_fps.pyx":40
+          /* "mdtraj_fps/_fps.pyx":40
  *                 if density[iz + offset] > 0:
  *                     _r[n, 0] = gd[ix + npm] + x0
  *                     _r[n, 1] = gd[iy + npm] + y0             # <<<<<<<<<<<<<<
@@ -2837,7 +2837,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
           if (__pyx_t_24 < 0) __pyx_t_24 += __pyx_pybuffernd__r.diminfo[1].shape;
           *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd__r.rcbuffer->pybuffer.buf, __pyx_t_23, __pyx_pybuffernd__r.diminfo[0].strides, __pyx_t_24, __pyx_pybuffernd__r.diminfo[1].strides) = ((*((double *) ( /* dim=0 */ (__pyx_v_gd.data + __pyx_t_22 * __pyx_v_gd.strides[0]) ))) + __pyx_v_y0);
 
-          /* "_fps.pyx":41
+          /* "mdtraj_fps/_fps.pyx":41
  *                     _r[n, 0] = gd[ix + npm] + x0
  *                     _r[n, 1] = gd[iy + npm] + y0
  *                     _r[n, 2] = gd[iz + npm] + z0             # <<<<<<<<<<<<<<
@@ -2852,7 +2852,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
           if (__pyx_t_27 < 0) __pyx_t_27 += __pyx_pybuffernd__r.diminfo[1].shape;
           *__Pyx_BufPtrStrided2d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd__r.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd__r.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd__r.diminfo[1].strides) = ((*((double *) ( /* dim=0 */ (__pyx_v_gd.data + __pyx_t_25 * __pyx_v_gd.strides[0]) ))) + __pyx_v_z0);
 
-          /* "_fps.pyx":42
+          /* "mdtraj_fps/_fps.pyx":42
  *                     _r[n, 1] = gd[iy + npm] + y0
  *                     _r[n, 2] = gd[iz + npm] + z0
  *                     n += 1             # <<<<<<<<<<<<<<
@@ -2861,7 +2861,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
  */
           __pyx_v_n = (__pyx_v_n + 1);
 
-          /* "_fps.pyx":38
+          /* "mdtraj_fps/_fps.pyx":38
  *         for iy in range(-npm, npm):
  *             for iz in range(-npm, npm):
  *                 if density[iz + offset] > 0:             # <<<<<<<<<<<<<<
@@ -2871,7 +2871,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
         }
       }
 
-      /* "_fps.pyx":43
+      /* "mdtraj_fps/_fps.pyx":43
  *                     _r[n, 2] = gd[iz + npm] + z0
  *                     n += 1
  *             offset += ng             # <<<<<<<<<<<<<<
@@ -2882,7 +2882,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
     }
   }
 
-  /* "_fps.pyx":44
+  /* "mdtraj_fps/_fps.pyx":44
  *                     n += 1
  *             offset += ng
  *     return _r             # <<<<<<<<<<<<<<
@@ -2894,7 +2894,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   __pyx_r = ((PyObject *)__pyx_v__r);
   goto __pyx_L0;
 
-  /* "_fps.pyx":22
+  /* "mdtraj_fps/_fps.pyx":22
  * 
  * @cython.boundscheck(False)
  * def density2points(int32_t n, int32_t npm, double dg, float[:] density, double[:] r0, int32_t ng):             # <<<<<<<<<<<<<<
@@ -2916,7 +2916,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd__r.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("_fps.density2points", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.density2points", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -2931,7 +2931,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
   return __pyx_r;
 }
 
-/* "_fps.pyx":49
+/* "mdtraj_fps/_fps.pyx":49
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * cdef inline c_random_distances(av1, av2, double* distances, uint32_t nSamples):             # <<<<<<<<<<<<<<
@@ -2939,7 +2939,7 @@ static PyObject *__pyx_pf_4_fps_density2points(CYTHON_UNUSED PyObject *__pyx_sel
  *     cdef uint32_t i, i1, i2
  */
 
-static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, double *__pyx_v_distances, CYTHON_UNUSED uint32_t __pyx_v_nSamples) {
+static CYTHON_INLINE PyObject *__pyx_f_10mdtraj_fps_c_random_distances(PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, double *__pyx_v_distances, CYTHON_UNUSED uint32_t __pyx_v_nSamples) {
   uint32_t __pyx_v_i;
   uint32_t __pyx_v_i1;
   uint32_t __pyx_v_i2;
@@ -2980,7 +2980,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
   Py_ssize_t __pyx_t_29;
   __Pyx_RefNannySetupContext("c_random_distances", 0);
 
-  /* "_fps.pyx":54
+  /* "mdtraj_fps/_fps.pyx":54
  *     cdef int32_t lp1, lp2
  * 
  *     cdef double[:, :] p1 = av1.points             # <<<<<<<<<<<<<<
@@ -2996,7 +2996,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "_fps.pyx":55
+  /* "mdtraj_fps/_fps.pyx":55
  * 
  *     cdef double[:, :] p1 = av1.points
  *     cdef double[:, :] p2 = av2.points             # <<<<<<<<<<<<<<
@@ -3012,7 +3012,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "_fps.pyx":57
+  /* "mdtraj_fps/_fps.pyx":57
  *     cdef double[:, :] p2 = av2.points
  * 
  *     lp1 = p1.shape[0]             # <<<<<<<<<<<<<<
@@ -3021,7 +3021,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
  */
   __pyx_v_lp1 = (__pyx_v_p1.shape[0]);
 
-  /* "_fps.pyx":58
+  /* "mdtraj_fps/_fps.pyx":58
  * 
  *     lp1 = p1.shape[0]
  *     lp2 = p2.shape[0]             # <<<<<<<<<<<<<<
@@ -3030,7 +3030,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
  */
   __pyx_v_lp2 = (__pyx_v_p2.shape[0]);
 
-  /* "_fps.pyx":60
+  /* "mdtraj_fps/_fps.pyx":60
  *     lp2 = p2.shape[0]
  * 
  *     for i in prange(nSamples, nogil=True):             # <<<<<<<<<<<<<<
@@ -3070,25 +3070,25 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
                             __pyx_v_i1 = ((uint32_t)0xbad0bad0);
                             __pyx_v_i2 = ((uint32_t)0xbad0bad0);
 
-                            /* "_fps.pyx":61
+                            /* "mdtraj_fps/_fps.pyx":61
  * 
  *     for i in prange(nSamples, nogil=True):
  *         i1 = <int>(rmt.random0i1e() * lp1)             # <<<<<<<<<<<<<<
  *         i2 = <int>(rmt.random0i1e() * lp2)
  *         distances[i] = sqrt(
  */
-                            __pyx_v_i1 = ((int)(__pyx_v_4_fps_rmt.random0i1e() * __pyx_v_lp1));
+                            __pyx_v_i1 = ((int)(__pyx_v_10mdtraj_fps_rmt.random0i1e() * __pyx_v_lp1));
 
-                            /* "_fps.pyx":62
+                            /* "mdtraj_fps/_fps.pyx":62
  *     for i in prange(nSamples, nogil=True):
  *         i1 = <int>(rmt.random0i1e() * lp1)
  *         i2 = <int>(rmt.random0i1e() * lp2)             # <<<<<<<<<<<<<<
  *         distances[i] = sqrt(
  *             (p1[i1, 0] - p2[i2, 0]) * (p1[i1, 0] - p2[i2, 0]) + \
  */
-                            __pyx_v_i2 = ((int)(__pyx_v_4_fps_rmt.random0i1e() * __pyx_v_lp2));
+                            __pyx_v_i2 = ((int)(__pyx_v_10mdtraj_fps_rmt.random0i1e() * __pyx_v_lp2));
 
-                            /* "_fps.pyx":64
+                            /* "mdtraj_fps/_fps.pyx":64
  *         i2 = <int>(rmt.random0i1e() * lp2)
  *         distances[i] = sqrt(
  *             (p1[i1, 0] - p2[i2, 0]) * (p1[i1, 0] - p2[i2, 0]) + \             # <<<<<<<<<<<<<<
@@ -3108,7 +3108,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
                             __pyx_t_13 = 0;
                             if (__pyx_t_13 < 0) __pyx_t_13 += __pyx_v_p2.shape[1];
 
-                            /* "_fps.pyx":65
+                            /* "mdtraj_fps/_fps.pyx":65
  *         distances[i] = sqrt(
  *             (p1[i1, 0] - p2[i2, 0]) * (p1[i1, 0] - p2[i2, 0]) + \
  *             (p1[i1, 1] - p2[i2, 1]) * (p1[i1, 1] - p2[i2, 1]) + \             # <<<<<<<<<<<<<<
@@ -3128,7 +3128,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
                             __pyx_t_21 = 1;
                             if (__pyx_t_21 < 0) __pyx_t_21 += __pyx_v_p2.shape[1];
 
-                            /* "_fps.pyx":66
+                            /* "mdtraj_fps/_fps.pyx":66
  *             (p1[i1, 0] - p2[i2, 0]) * (p1[i1, 0] - p2[i2, 0]) + \
  *             (p1[i1, 1] - p2[i2, 1]) * (p1[i1, 1] - p2[i2, 1]) + \
  *             (p1[i1, 2] - p2[i2, 2]) * (p1[i1, 2] - p2[i2, 2])             # <<<<<<<<<<<<<<
@@ -3148,7 +3148,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
                             __pyx_t_29 = 2;
                             if (__pyx_t_29 < 0) __pyx_t_29 += __pyx_v_p2.shape[1];
 
-                            /* "_fps.pyx":63
+                            /* "mdtraj_fps/_fps.pyx":63
  *         i1 = <int>(rmt.random0i1e() * lp1)
  *         i2 = <int>(rmt.random0i1e() * lp2)
  *         distances[i] = sqrt(             # <<<<<<<<<<<<<<
@@ -3169,7 +3169,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
         #endif
       }
 
-      /* "_fps.pyx":60
+      /* "mdtraj_fps/_fps.pyx":60
  *     lp2 = p2.shape[0]
  * 
  *     for i in prange(nSamples, nogil=True):             # <<<<<<<<<<<<<<
@@ -3188,7 +3188,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
       }
   }
 
-  /* "_fps.pyx":49
+  /* "mdtraj_fps/_fps.pyx":49
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * cdef inline c_random_distances(av1, av2, double* distances, uint32_t nSamples):             # <<<<<<<<<<<<<<
@@ -3202,7 +3202,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_2, 1);
-  __Pyx_AddTraceback("_fps.c_random_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.c_random_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_p1, 1);
@@ -3212,7 +3212,7 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "_fps.pyx":69
+/* "mdtraj_fps/_fps.pyx":69
  *         )
  * 
  * def random_distances(av1, av2, uint32_t nSamples=10000):             # <<<<<<<<<<<<<<
@@ -3221,9 +3221,9 @@ static CYTHON_INLINE PyObject *__pyx_f_4_fps_c_random_distances(PyObject *__pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4_fps_3random_distances(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4_fps_3random_distances = {"random_distances", (PyCFunction)__pyx_pw_4_fps_3random_distances, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4_fps_3random_distances(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_10mdtraj_fps_3random_distances(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_10mdtraj_fps_3random_distances = {"random_distances", (PyCFunction)__pyx_pw_10mdtraj_fps_3random_distances, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_10mdtraj_fps_3random_distances(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_av1 = 0;
   PyObject *__pyx_v_av2 = 0;
   uint32_t __pyx_v_nSamples;
@@ -3289,18 +3289,18 @@ static PyObject *__pyx_pw_4_fps_3random_distances(PyObject *__pyx_self, PyObject
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("random_distances", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 69, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_fps.random_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.random_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4_fps_2random_distances(__pyx_self, __pyx_v_av1, __pyx_v_av2, __pyx_v_nSamples);
+  __pyx_r = __pyx_pf_10mdtraj_fps_2random_distances(__pyx_self, __pyx_v_av1, __pyx_v_av2, __pyx_v_nSamples);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples) {
+static PyObject *__pyx_pf_10mdtraj_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples) {
   PyArrayObject *__pyx_v_dist = 0;
   double *__pyx_v_dist_buff;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_dist;
@@ -3319,7 +3319,7 @@ static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_
   __pyx_pybuffernd_dist.data = NULL;
   __pyx_pybuffernd_dist.rcbuffer = &__pyx_pybuffer_dist;
 
-  /* "_fps.pyx":70
+  /* "mdtraj_fps/_fps.pyx":70
  * 
  * def random_distances(av1, av2, uint32_t nSamples=10000):
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] dist = np.empty(nSamples, dtype=np.float64)             # <<<<<<<<<<<<<<
@@ -3366,7 +3366,7 @@ static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_
   __pyx_v_dist = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "_fps.pyx":71
+  /* "mdtraj_fps/_fps.pyx":71
  * def random_distances(av1, av2, uint32_t nSamples=10000):
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] dist = np.empty(nSamples, dtype=np.float64)
  *     cdef double* dist_buff = <double*> dist.data             # <<<<<<<<<<<<<<
@@ -3375,18 +3375,18 @@ static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_
  */
   __pyx_v_dist_buff = ((double *)__pyx_v_dist->data);
 
-  /* "_fps.pyx":72
+  /* "mdtraj_fps/_fps.pyx":72
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] dist = np.empty(nSamples, dtype=np.float64)
  *     cdef double* dist_buff = <double*> dist.data
  *     c_random_distances(av1, av2, dist_buff, nSamples)             # <<<<<<<<<<<<<<
  *     return dist
  * 
  */
-  __pyx_t_5 = __pyx_f_4_fps_c_random_distances(__pyx_v_av1, __pyx_v_av2, __pyx_v_dist_buff, __pyx_v_nSamples); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __pyx_t_5 = __pyx_f_10mdtraj_fps_c_random_distances(__pyx_v_av1, __pyx_v_av2, __pyx_v_dist_buff, __pyx_v_nSamples); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "_fps.pyx":73
+  /* "mdtraj_fps/_fps.pyx":73
  *     cdef double* dist_buff = <double*> dist.data
  *     c_random_distances(av1, av2, dist_buff, nSamples)
  *     return dist             # <<<<<<<<<<<<<<
@@ -3398,7 +3398,7 @@ static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_
   __pyx_r = ((PyObject *)__pyx_v_dist);
   goto __pyx_L0;
 
-  /* "_fps.pyx":69
+  /* "mdtraj_fps/_fps.pyx":69
  *         )
  * 
  * def random_distances(av1, av2, uint32_t nSamples=10000):             # <<<<<<<<<<<<<<
@@ -3419,7 +3419,7 @@ static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_dist.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("_fps.random_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.random_distances", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -3431,7 +3431,7 @@ static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "_fps.pyx":78
+/* "mdtraj_fps/_fps.pyx":78
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMeanE(av1, av2, double R0=52.0, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
@@ -3440,9 +3440,9 @@ static PyObject *__pyx_pf_4_fps_2random_distances(CYTHON_UNUSED PyObject *__pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4_fps_5RDAMeanE(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4_fps_5RDAMeanE = {"RDAMeanE", (PyCFunction)__pyx_pw_4_fps_5RDAMeanE, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4_fps_5RDAMeanE(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_10mdtraj_fps_5RDAMeanE(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_10mdtraj_fps_5RDAMeanE = {"RDAMeanE", (PyCFunction)__pyx_pw_10mdtraj_fps_5RDAMeanE, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_10mdtraj_fps_5RDAMeanE(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_av1 = 0;
   PyObject *__pyx_v_av2 = 0;
   double __pyx_v_R0;
@@ -3524,18 +3524,18 @@ static PyObject *__pyx_pw_4_fps_5RDAMeanE(PyObject *__pyx_self, PyObject *__pyx_
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("RDAMeanE", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 78, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_fps.RDAMeanE", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.RDAMeanE", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4_fps_4RDAMeanE(__pyx_self, __pyx_v_av1, __pyx_v_av2, __pyx_v_R0, __pyx_v_nSamples);
+  __pyx_r = __pyx_pf_10mdtraj_fps_4RDAMeanE(__pyx_self, __pyx_v_av1, __pyx_v_av2, __pyx_v_R0, __pyx_v_nSamples);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, double __pyx_v_R0, uint32_t __pyx_v_nSamples) {
+static PyObject *__pyx_pf_10mdtraj_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, double __pyx_v_R0, uint32_t __pyx_v_nSamples) {
   uint32_t __pyx_v_i;
   double __pyx_v_Esum;
   double *__pyx_v_d;
@@ -3547,7 +3547,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
   uint32_t __pyx_t_4;
   __Pyx_RefNannySetupContext("RDAMeanE", 0);
 
-  /* "_fps.pyx":80
+  /* "mdtraj_fps/_fps.pyx":80
  * def RDAMeanE(av1, av2, double R0=52.0, uint32_t nSamples=50000):
  *     cdef uint32_t i
  *     cdef double Esum = 0.0             # <<<<<<<<<<<<<<
@@ -3556,7 +3556,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
  */
   __pyx_v_Esum = 0.0;
 
-  /* "_fps.pyx":81
+  /* "mdtraj_fps/_fps.pyx":81
  *     cdef uint32_t i
  *     cdef double Esum = 0.0
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3565,18 +3565,18 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
  */
   __pyx_v_d = ((double *)malloc((__pyx_v_nSamples * (sizeof(double)))));
 
-  /* "_fps.pyx":82
+  /* "mdtraj_fps/_fps.pyx":82
  *     cdef double Esum = 0.0
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))
  *     c_random_distances(av1, av2, d, nSamples)             # <<<<<<<<<<<<<<
  *     for i in prange(nSamples, nogil=True):
  *         Esum += (1./(1.+(d[i]/R0)**6.0))
  */
-  __pyx_t_1 = __pyx_f_4_fps_c_random_distances(__pyx_v_av1, __pyx_v_av2, __pyx_v_d, __pyx_v_nSamples); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_10mdtraj_fps_c_random_distances(__pyx_v_av1, __pyx_v_av2, __pyx_v_d, __pyx_v_nSamples); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_fps.pyx":83
+  /* "mdtraj_fps/_fps.pyx":83
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))
  *     c_random_distances(av1, av2, d, nSamples)
  *     for i in prange(nSamples, nogil=True):             # <<<<<<<<<<<<<<
@@ -3613,7 +3613,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
                         {
                             __pyx_v_i = (uint32_t)(0 + 1 * __pyx_t_3);
 
-                            /* "_fps.pyx":84
+                            /* "mdtraj_fps/_fps.pyx":84
  *     c_random_distances(av1, av2, d, nSamples)
  *     for i in prange(nSamples, nogil=True):
  *         Esum += (1./(1.+(d[i]/R0)**6.0))             # <<<<<<<<<<<<<<
@@ -3634,7 +3634,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
         #endif
       }
 
-      /* "_fps.pyx":83
+      /* "mdtraj_fps/_fps.pyx":83
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))
  *     c_random_distances(av1, av2, d, nSamples)
  *     for i in prange(nSamples, nogil=True):             # <<<<<<<<<<<<<<
@@ -3653,7 +3653,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
       }
   }
 
-  /* "_fps.pyx":85
+  /* "mdtraj_fps/_fps.pyx":85
  *     for i in prange(nSamples, nogil=True):
  *         Esum += (1./(1.+(d[i]/R0)**6.0))
  *     Esum /= nSamples             # <<<<<<<<<<<<<<
@@ -3662,7 +3662,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
  */
   __pyx_v_Esum = (__pyx_v_Esum / __pyx_v_nSamples);
 
-  /* "_fps.pyx":86
+  /* "mdtraj_fps/_fps.pyx":86
  *         Esum += (1./(1.+(d[i]/R0)**6.0))
  *     Esum /= nSamples
  *     free(d)             # <<<<<<<<<<<<<<
@@ -3671,7 +3671,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
  */
   free(__pyx_v_d);
 
-  /* "_fps.pyx":87
+  /* "mdtraj_fps/_fps.pyx":87
  *     Esum /= nSamples
  *     free(d)
  *     return (1./Esum - 1.)**(1./6.) * R0             # <<<<<<<<<<<<<<
@@ -3685,7 +3685,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "_fps.pyx":78
+  /* "mdtraj_fps/_fps.pyx":78
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMeanE(av1, av2, double R0=52.0, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
@@ -3696,7 +3696,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_fps.RDAMeanE", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.RDAMeanE", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3704,7 +3704,7 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
   return __pyx_r;
 }
 
-/* "_fps.pyx":92
+/* "mdtraj_fps/_fps.pyx":92
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMean(av1, av2, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
@@ -3713,9 +3713,9 @@ static PyObject *__pyx_pf_4_fps_4RDAMeanE(CYTHON_UNUSED PyObject *__pyx_self, Py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4_fps_7RDAMean(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4_fps_7RDAMean = {"RDAMean", (PyCFunction)__pyx_pw_4_fps_7RDAMean, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4_fps_7RDAMean(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_10mdtraj_fps_7RDAMean(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_10mdtraj_fps_7RDAMean = {"RDAMean", (PyCFunction)__pyx_pw_10mdtraj_fps_7RDAMean, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_10mdtraj_fps_7RDAMean(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_av1 = 0;
   PyObject *__pyx_v_av2 = 0;
   uint32_t __pyx_v_nSamples;
@@ -3781,18 +3781,18 @@ static PyObject *__pyx_pw_4_fps_7RDAMean(PyObject *__pyx_self, PyObject *__pyx_a
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("RDAMean", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 92, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_fps.RDAMean", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.RDAMean", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4_fps_6RDAMean(__pyx_self, __pyx_v_av1, __pyx_v_av2, __pyx_v_nSamples);
+  __pyx_r = __pyx_pf_10mdtraj_fps_6RDAMean(__pyx_self, __pyx_v_av1, __pyx_v_av2, __pyx_v_nSamples);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples) {
+static PyObject *__pyx_pf_10mdtraj_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_av1, PyObject *__pyx_v_av2, uint32_t __pyx_v_nSamples) {
   uint32_t __pyx_v_i;
   double __pyx_v_RDA;
   double *__pyx_v_d;
@@ -3804,7 +3804,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
   uint32_t __pyx_t_4;
   __Pyx_RefNannySetupContext("RDAMean", 0);
 
-  /* "_fps.pyx":94
+  /* "mdtraj_fps/_fps.pyx":94
  * def RDAMean(av1, av2, uint32_t nSamples=50000):
  *     cdef uint32_t i
  *     cdef double RDA = 0.0             # <<<<<<<<<<<<<<
@@ -3813,7 +3813,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
  */
   __pyx_v_RDA = 0.0;
 
-  /* "_fps.pyx":96
+  /* "mdtraj_fps/_fps.pyx":96
  *     cdef double RDA = 0.0
  * 
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))             # <<<<<<<<<<<<<<
@@ -3822,18 +3822,18 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
  */
   __pyx_v_d = ((double *)malloc((__pyx_v_nSamples * (sizeof(double)))));
 
-  /* "_fps.pyx":97
+  /* "mdtraj_fps/_fps.pyx":97
  * 
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))
  *     c_random_distances(av1, av2, d, nSamples)             # <<<<<<<<<<<<<<
  *     for i in prange(nSamples, nogil=True):
  *         RDA += d[i]
  */
-  __pyx_t_1 = __pyx_f_4_fps_c_random_distances(__pyx_v_av1, __pyx_v_av2, __pyx_v_d, __pyx_v_nSamples); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_10mdtraj_fps_c_random_distances(__pyx_v_av1, __pyx_v_av2, __pyx_v_d, __pyx_v_nSamples); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_fps.pyx":98
+  /* "mdtraj_fps/_fps.pyx":98
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))
  *     c_random_distances(av1, av2, d, nSamples)
  *     for i in prange(nSamples, nogil=True):             # <<<<<<<<<<<<<<
@@ -3870,7 +3870,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
                         {
                             __pyx_v_i = (uint32_t)(0 + 1 * __pyx_t_3);
 
-                            /* "_fps.pyx":99
+                            /* "mdtraj_fps/_fps.pyx":99
  *     c_random_distances(av1, av2, d, nSamples)
  *     for i in prange(nSamples, nogil=True):
  *         RDA += d[i]             # <<<<<<<<<<<<<<
@@ -3891,7 +3891,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
         #endif
       }
 
-      /* "_fps.pyx":98
+      /* "mdtraj_fps/_fps.pyx":98
  *     cdef double* d = <double*>malloc(nSamples * sizeof(double))
  *     c_random_distances(av1, av2, d, nSamples)
  *     for i in prange(nSamples, nogil=True):             # <<<<<<<<<<<<<<
@@ -3910,7 +3910,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
       }
   }
 
-  /* "_fps.pyx":100
+  /* "mdtraj_fps/_fps.pyx":100
  *     for i in prange(nSamples, nogil=True):
  *         RDA += d[i]
  *     free(d)             # <<<<<<<<<<<<<<
@@ -3919,7 +3919,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
  */
   free(__pyx_v_d);
 
-  /* "_fps.pyx":101
+  /* "mdtraj_fps/_fps.pyx":101
  *         RDA += d[i]
  *     free(d)
  *     return RDA / nSamples             # <<<<<<<<<<<<<<
@@ -3933,7 +3933,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "_fps.pyx":92
+  /* "mdtraj_fps/_fps.pyx":92
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMean(av1, av2, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
@@ -3944,7 +3944,7 @@ static PyObject *__pyx_pf_4_fps_6RDAMean(CYTHON_UNUSED PyObject *__pyx_self, PyO
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_fps.RDAMean", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("mdtraj_fps.RDAMean", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -19463,7 +19463,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_fps.array", /*tp_name*/
+  "mdtraj_fps.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -19571,7 +19571,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_fps.Enum", /*tp_name*/
+  "mdtraj_fps.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -19821,7 +19821,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_fps.memoryview", /*tp_name*/
+  "mdtraj_fps.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -19948,7 +19948,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_fps._memoryviewslice", /*tp_name*/
+  "mdtraj_fps._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -20019,17 +20019,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec__fps(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_mdtraj_fps(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec__fps},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_mdtraj_fps},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "_fps",
+    "mdtraj_fps",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -20110,8 +20110,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_format, __pyx_k_format, sizeof(__pyx_k_format), 0, 0, 1, 1},
   {&__pyx_n_s_fortran, __pyx_k_fortran, sizeof(__pyx_k_fortran), 0, 0, 1, 1},
   {&__pyx_n_u_fortran, __pyx_k_fortran, sizeof(__pyx_k_fortran), 0, 1, 0, 1},
-  {&__pyx_n_s_fps, __pyx_k_fps, sizeof(__pyx_k_fps), 0, 0, 1, 1},
-  {&__pyx_kp_s_fps_pyx, __pyx_k_fps_pyx, sizeof(__pyx_k_fps_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_gd, __pyx_k_gd, sizeof(__pyx_k_gd), 0, 0, 1, 1},
   {&__pyx_n_s_getstate, __pyx_k_getstate, sizeof(__pyx_k_getstate), 0, 0, 1, 1},
   {&__pyx_kp_s_got_differing_extents_in_dimensi, __pyx_k_got_differing_extents_in_dimensi, sizeof(__pyx_k_got_differing_extents_in_dimensi), 0, 0, 1, 0},
@@ -20124,6 +20122,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_iy, __pyx_k_iy, sizeof(__pyx_k_iy), 0, 0, 1, 1},
   {&__pyx_n_s_iz, __pyx_k_iz, sizeof(__pyx_k_iz), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
+  {&__pyx_n_s_mdtraj_fps, __pyx_k_mdtraj_fps, sizeof(__pyx_k_mdtraj_fps), 0, 0, 1, 1},
+  {&__pyx_kp_s_mdtraj_fps__fps_pyx, __pyx_k_mdtraj_fps__fps_pyx, sizeof(__pyx_k_mdtraj_fps__fps_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_memview, __pyx_k_memview, sizeof(__pyx_k_memview), 0, 0, 1, 1},
   {&__pyx_n_s_mode, __pyx_k_mode, sizeof(__pyx_k_mode), 0, 0, 1, 1},
   {&__pyx_n_s_n, __pyx_k_n, sizeof(__pyx_k_n), 0, 0, 1, 1},
@@ -20505,7 +20505,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
 
-  /* "_fps.pyx":22
+  /* "mdtraj_fps/_fps.pyx":22
  * 
  * @cython.boundscheck(False)
  * def density2points(int32_t n, int32_t npm, double dg, float[:] density, double[:] r0, int32_t ng):             # <<<<<<<<<<<<<<
@@ -20515,9 +20515,9 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__29 = PyTuple_Pack(15, __pyx_n_s_n, __pyx_n_s_npm, __pyx_n_s_dg, __pyx_n_s_density, __pyx_n_s_r0, __pyx_n_s_ng, __pyx_n_s_ix, __pyx_n_s_iy, __pyx_n_s_iz, __pyx_n_s_offset, __pyx_n_s_x0, __pyx_n_s_y0, __pyx_n_s_z0, __pyx_n_s_r, __pyx_n_s_gd); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(6, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_fps_pyx, __pyx_n_s_density2points, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(6, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_mdtraj_fps__fps_pyx, __pyx_n_s_density2points, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 22, __pyx_L1_error)
 
-  /* "_fps.pyx":69
+  /* "mdtraj_fps/_fps.pyx":69
  *         )
  * 
  * def random_distances(av1, av2, uint32_t nSamples=10000):             # <<<<<<<<<<<<<<
@@ -20527,9 +20527,9 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__31 = PyTuple_Pack(5, __pyx_n_s_av1, __pyx_n_s_av2, __pyx_n_s_nSamples, __pyx_n_s_dist, __pyx_n_s_dist_buff); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_fps_pyx, __pyx_n_s_random_distances, 69, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_mdtraj_fps__fps_pyx, __pyx_n_s_random_distances, 69, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 69, __pyx_L1_error)
 
-  /* "_fps.pyx":78
+  /* "mdtraj_fps/_fps.pyx":78
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMeanE(av1, av2, double R0=52.0, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
@@ -20539,9 +20539,9 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__33 = PyTuple_Pack(7, __pyx_n_s_av1, __pyx_n_s_av2, __pyx_n_s_R0, __pyx_n_s_nSamples, __pyx_n_s_i, __pyx_n_s_Esum, __pyx_n_s_d); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
   __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_fps_pyx, __pyx_n_s_RDAMeanE, 78, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_mdtraj_fps__fps_pyx, __pyx_n_s_RDAMeanE, 78, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 78, __pyx_L1_error)
 
-  /* "_fps.pyx":92
+  /* "mdtraj_fps/_fps.pyx":92
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMean(av1, av2, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
@@ -20551,7 +20551,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__35 = PyTuple_Pack(6, __pyx_n_s_av1, __pyx_n_s_av2, __pyx_n_s_nSamples, __pyx_n_s_i, __pyx_n_s_RDA, __pyx_n_s_d); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(3, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_fps_pyx, __pyx_n_s_RDAMean, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(3, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_mdtraj_fps__fps_pyx, __pyx_n_s_RDAMean, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 92, __pyx_L1_error)
 
   /* "View.MemoryView":284
  *         return self.name
@@ -20644,11 +20644,11 @@ if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 1, __pyx_L1_error)
 }
 
 #if PY_MAJOR_VERSION < 3
-PyMODINIT_FUNC init_fps(void); /*proto*/
-PyMODINIT_FUNC init_fps(void)
+PyMODINIT_FUNC initmdtraj_fps(void); /*proto*/
+PyMODINIT_FUNC initmdtraj_fps(void)
 #else
-PyMODINIT_FUNC PyInit__fps(void); /*proto*/
-PyMODINIT_FUNC PyInit__fps(void)
+PyMODINIT_FUNC PyInit_mdtraj_fps(void); /*proto*/
+PyMODINIT_FUNC PyInit_mdtraj_fps(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -20688,7 +20688,7 @@ bad:
 }
 
 
-static int __pyx_pymod_exec__fps(PyObject *__pyx_pyinit_module)
+static int __pyx_pymod_exec_mdtraj_fps(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -20707,7 +20707,7 @@ static int __pyx_pymod_exec__fps(PyObject *__pyx_pyinit_module)
           Py_FatalError("failed to import 'refnanny' module");
   }
   #endif
-  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit__fps(void)", 0);
+  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit_mdtraj_fps(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -20743,7 +20743,7 @@ static int __pyx_pymod_exec__fps(PyObject *__pyx_pyinit_module)
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("_fps", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("mdtraj_fps", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -20762,14 +20762,14 @@ static int __pyx_pymod_exec__fps(PyObject *__pyx_pyinit_module)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main__fps) {
+  if (__pyx_module_is_main_mdtraj_fps) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "_fps")) {
-      if (unlikely(PyDict_SetItemString(modules, "_fps", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "mdtraj_fps")) {
+      if (unlikely(PyDict_SetItemString(modules, "mdtraj_fps", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -20840,7 +20840,7 @@ static int __pyx_pymod_exec__fps(PyObject *__pyx_pyinit_module)
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "_fps.pyx":1
+  /* "mdtraj_fps/_fps.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * cimport cython
@@ -20850,64 +20850,64 @@ static int __pyx_pymod_exec__fps(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_fps.pyx":18
+  /* "mdtraj_fps/_fps.pyx":18
  * 
  * cdef MTrandoms rmt
  * rmt.seedMT()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_v_4_fps_rmt.seedMT();
+  __pyx_v_10mdtraj_fps_rmt.seedMT();
 
-  /* "_fps.pyx":22
+  /* "mdtraj_fps/_fps.pyx":22
  * 
  * @cython.boundscheck(False)
  * def density2points(int32_t n, int32_t npm, double dg, float[:] density, double[:] r0, int32_t ng):             # <<<<<<<<<<<<<<
  *     cdef int32_t ix, iy, iz, offset
  *     cdef double x0, y0, z0
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_4_fps_1density2points, NULL, __pyx_n_s_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_10mdtraj_fps_1density2points, NULL, __pyx_n_s_mdtraj_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_density2points, __pyx_t_1) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_fps.pyx":69
+  /* "mdtraj_fps/_fps.pyx":69
  *         )
  * 
  * def random_distances(av1, av2, uint32_t nSamples=10000):             # <<<<<<<<<<<<<<
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] dist = np.empty(nSamples, dtype=np.float64)
  *     cdef double* dist_buff = <double*> dist.data
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_4_fps_3random_distances, NULL, __pyx_n_s_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_10mdtraj_fps_3random_distances, NULL, __pyx_n_s_mdtraj_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_random_distances, __pyx_t_1) < 0) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_fps.pyx":78
+  /* "mdtraj_fps/_fps.pyx":78
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMeanE(av1, av2, double R0=52.0, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
  *     cdef uint32_t i
  *     cdef double Esum = 0.0
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_4_fps_5RDAMeanE, NULL, __pyx_n_s_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_10mdtraj_fps_5RDAMeanE, NULL, __pyx_n_s_mdtraj_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_RDAMeanE, __pyx_t_1) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_fps.pyx":92
+  /* "mdtraj_fps/_fps.pyx":92
  * @cython.cdivision(True)
  * @cython.boundscheck(False)
  * def RDAMean(av1, av2, uint32_t nSamples=50000):             # <<<<<<<<<<<<<<
  *     cdef uint32_t i
  *     cdef double RDA = 0.0
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_4_fps_7RDAMean, NULL, __pyx_n_s_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_10mdtraj_fps_7RDAMean, NULL, __pyx_n_s_mdtraj_fps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_RDAMean, __pyx_t_1) < 0) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_fps.pyx":1
+  /* "mdtraj_fps/_fps.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * cimport cython
@@ -21077,11 +21077,11 @@ static int __pyx_pymod_exec__fps(PyObject *__pyx_pyinit_module)
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init _fps", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init mdtraj_fps", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init _fps");
+    PyErr_SetString(PyExc_ImportError, "init mdtraj_fps");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

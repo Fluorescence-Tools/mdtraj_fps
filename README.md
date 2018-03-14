@@ -30,19 +30,27 @@ conda install mdtraj_fps
 import mdtraj as md
 from mdtraj_fps import fps
 
-traj = md.load('./example/hGBP1_out_3.h5')
-av_traj = fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB')
+# First load an MD trajectory by mdtraj
+traj = md.load('./examples/hGBP1_out_3.h5')
 
-# save accessible volume as xyz-file
+# Pass a trajectory to fps.AVTrajectory. This creates an object, which can be 
+# accessed as a list. The objects within the "list" are accessible volumes  
+av_traj = fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB')
+# These accessible volumes can be saved as xyz-file
 av_traj[0].save_xyz('test_344.xyz')
 
-# Use certain dye-parameter set (see dye_defenitiion.json file)
+# The dye parameters can either be passed explicitly on creation of the object
+av_traj = fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB', linker_length=25., linker_width=1.5, radius_1=6.0)
+
+# or they can be selected from a predefined set of parameters found in the JSON file dye_definition.json located within
+# the package directory 
 av_traj = fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB', dye_parameter_set='D3Alexa488')
 
-# Calculate
-distance_file = './example/hGBP1_distance.json'
-av_dist = fps.AvDistanceTrajectory(traj, distance_file)
-av_dist[0]
+# To calculate a trajectory of distances and distance distributions first a labeling file and a "distance file" 
+# needs to be specified. The distance file contains a set of labeling positions and distances and should be compatible
+# to the labeling files used by the software "Olga". By default the 
+av_dist = fps.AvDistanceTrajectory(traj, './examples/hGBP1_distance.json')
+
 ```
 
 ## Dependencies
