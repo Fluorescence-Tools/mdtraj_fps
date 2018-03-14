@@ -14,14 +14,23 @@ With MDTrajFPS, you can
 
 The original FPS-software package is available at http://www.mpc.hhu.de/software/fps.html.
 
+## Installation
+
+# Anaconda
+
+```commandline
+conda --add channels tpeulen
+conda install mdtraj_fps
+```
+
 
 ##  Code Example
 
 ```python
 import mdtraj as md
-import fps
+from mdtraj_fps import fps
 
-traj = md.load('./fluorescence/sample/hGBP1_out_3.h5')
+traj = md.load('./example/hGBP1_out_3.h5')
 av_traj = fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB')
 
 # save accessible volume as xyz-file
@@ -31,7 +40,7 @@ av_traj[0].save_xyz('test_344.xyz')
 av_traj = fps.AVTrajectory(traj, '18D', attachment_atom_selection='resSeq 7 and name CB', dye_parameter_set='D3Alexa488')
 
 # Calculate
-distance_file = './fluorescence/sample/hGBP1_distance.json'
+distance_file = './example/hGBP1_distance.json'
 av_dist = fps.AvDistanceTrajectory(traj, distance_file)
 av_dist[0]
 ```

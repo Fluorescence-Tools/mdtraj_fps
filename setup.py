@@ -5,7 +5,7 @@ import numpy
 
 extension = Extension(
         '_fps',
-        sources=['_fps.pyx', 'mt19937cok.cpp'],
+        sources=['./mdtraj_fps/_fps.pyx', './md_traj/mt19937cok.cpp'],
         include_dirs=[numpy.get_include(), "."],
         # extra_compile_args=['-fopenmp'],
         #extra_link_args=['-fopenmp'],
